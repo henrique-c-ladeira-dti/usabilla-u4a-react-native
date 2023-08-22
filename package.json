@@ -20,15 +20,11 @@
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
-    "postinstall": "run-script-os",
-    "postinstall:darwin:linux": "if [ -d \".git/hooks/\" ]; then cp .script/commit_check.sh .git/hooks/commit-msg; fi",
-    "postinstall:win32": "echo 'Windows detected, skipping commit check hook installation.'",
     "semantic-release": "semantic-release",
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest"
   },
   "devDependencies": {
-    "run-script-os": "^1.1.6",
     "semantic-release": "^19.0.3"
   }
 }
